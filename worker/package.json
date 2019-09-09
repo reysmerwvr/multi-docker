@@ -1,0 +1,16 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Complex Worker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon"
+  },
+  "author": "Reysmer Valle",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.19.2",
+    "redis": "^2.8.0"
+  }
+}
