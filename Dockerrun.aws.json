@@ -1,0 +1,40 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "reysmerwvr/multi-client",
+      "hostname": "client",
+      "essential": false,
+      "memory": 128
+    },
+    {
+      "name": "server",
+      "image": "reysmerwvr/multi-server",
+      "hostname": "api",
+      "essential": false,
+      "memory": 128
+    },
+    {
+      "name": "worker",
+      "image": "reysmerwvr/multi-worker",
+      "hostname": "worker",
+      "essential": false,
+      "memory": 128
+    },
+    {
+      "name": "nginx",
+      "image": "reysmerwvr/multi-nginx",
+      "hostname": "nginx",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "conatinerPort": 80
+        }
+      ],
+      "links": ["client", "server"],
+      "memory": 128
+    }
+  ]
+}
