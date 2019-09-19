@@ -99,11 +99,11 @@ class Fib extends Component {
     this.setState({ index: '' });
   };
 
-  renderSeenIndexes() {
+  renderSeenIndexes = () => {
     return this.state.seenIndexes.map(({ number }) => number).join(', ');
   }
 
-  renderValues() {
+  renderValues = () => {
     const entries = [];
 
     for (let key in this.state.values) {
