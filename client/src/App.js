@@ -23,7 +23,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Fib Calculator
+            Fib Calculator Version 2
           </a>
         </header>
       </div>
