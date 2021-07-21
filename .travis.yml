@@ -19,7 +19,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
   - docker push reysmerwvr/multi-client
-  - docker push reysmerwvr/multi-nginx 
+  - docker push reysmerwvr/multi-nginx
   - docker push reysmerwvr/multi-server
   - docker push reysmerwvr/multi-worker
 
