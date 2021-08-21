@@ -18,7 +18,7 @@
 
 Multi Docker Containers Application requires [Docker 20.10.7+](https://www.docker.com/products/docker-desktop) to run.
 
-Download zip file and extract it [latest release](https://github.com/reysmerwvr/multi-docker). Or clone the repository and open it using Xcode.
+Download zip file and extract it [latest release](https://github.com/reysmerwvr/multi-docker).
 
 Run the project.
 
